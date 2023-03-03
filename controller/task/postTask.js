@@ -3,9 +3,9 @@ require("dotenv").config();
 const table = process.env.TASKTABLE;
 const postTask = async (req, res) => {
   try {
-    const { name } = req.body;
-    const queryString = `INSERT INTO ${table} (task_name) VALUES ($1) RETURNING *`;
-    const result = await pool.query(queryString, [name]);
+    const { name, description } = req.body;
+    const queryString = `INSERT INTO ${table} (task_name,description) VALUES ($1,$2) RETURNING *`;
+    const result = await pool.query(queryString, [name, description]);
     res.status(201).json(result.rows);
   } catch (err) {
     console.log(err);
