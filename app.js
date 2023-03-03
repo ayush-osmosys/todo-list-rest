@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 // const cors = require("cors");
 require("dotenv").config();
-const home = require("./routes/task/getAllTask");
+const task = require("./routes/task");
 const app = express();
 const pool = require("./db");
 
@@ -13,4 +13,4 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(cors);
 app.listen(PORT, () => console.log("Server started at port " + PORT));
 
-app.use(home);
+app.use(task);
