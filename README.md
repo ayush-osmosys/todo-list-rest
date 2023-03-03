@@ -1,5 +1,5 @@
 SIMPLE CRUD APPLICATION\
-Database used is postgresQL with pg npm packet as driver for database.
+Database used is postgresQL with pg npm package as driver for database.
 
 Routes\
 GET /task - list all tasks\
