@@ -25,6 +25,7 @@ make sure that your PostgreSQL database is up and running and it has the table n
 
 ```bash
 git clone https://github.com/ayush-osmosys/todo-list-rest
+cd todo-list-rest
 npm i
 npm run dev
 ```
