@@ -6,12 +6,12 @@
 
 create a file for your environment setup named **.env**  
 CREATE THE FOLLOWING VARIABLES AND SPECIFY THEIR VALUES AS OR AS YOUVE CONFIGURED LOCALLY  
->PORT=5000
->PGPORT=5423
->PGUSER=postgres
->PGPASSWORD=""
->PGHOST=localhost
->PGDATABASE=*todo_database*
+>PORT=5000  
+>PGPORT=5423  
+>PGUSER=postgres  
+>PGPASSWORD=""  
+>PGHOST=localhost  
+>PGDATABASE=*todo_database*  
 
 The app queries data from PostgreSQL database *todo_database* that has a table *task_table* that stores the task  
 the *task* resource has the following fields:  
