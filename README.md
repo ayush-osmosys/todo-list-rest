@@ -51,7 +51,7 @@ Based on *task* resource, the following endpoint exist in RESTful implementation
     - body:
       - name (required)
       - description
-      - status (default: *inprogress*)
+      - status (default: "*inprogress*")
   - response:
     - task_id
     - name
