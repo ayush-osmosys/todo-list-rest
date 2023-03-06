@@ -40,7 +40,7 @@ Based on *task* resource, the following endpoint exist in RESTful implementation
 - GET /task/:task_id
   - request:
     - param : task_id
-  -response:
+  - response:
     - task_id
     - name
     - description
